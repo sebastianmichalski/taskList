@@ -1,4 +1,4 @@
-package main.java;
+package topic;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.Map;
 public final class TopicList implements Runnable {
 
     private static final String EXIT = "exit";
-    private final Map<String, List<Topic>> topic = new LinkedHashMap<>();
+    private final Map<String, List<Topic>> topicsMap = new LinkedHashMap<>();
     private final BufferedReader in;
     private final PrintWriter out;
 
@@ -65,13 +65,16 @@ public final class TopicList implements Runnable {
         out.println();
     }
 
-    //TODO: Using TDD approach create methots add() and show()
-
-    private void add(String commandLine) {
+    //TODO: Using TDD approach create methods add() and show()
+    /**
+     A method of adding one item to the TopicList. Input from the command line
+     */
+    private void add(String commandLine){
     }
 
-    private void show() {
+    /**
+     Print all items from TopicList to the console, without the Topic<key>, each object as a separate line
+     */
+    private void show(){
     }
-
-
 }

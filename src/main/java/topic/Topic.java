@@ -1,4 +1,4 @@
-package main.java;
+package topic;
 
 public final class Topic {
 
